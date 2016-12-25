@@ -6,7 +6,7 @@ Some of the set up include:
 
 #1) Java 8  
   
-#2) Add library dependencies:  
+#2) Library dependencies:  
 a) ButterKnife  
 b) RecyclerView  
 c) RXJava  
