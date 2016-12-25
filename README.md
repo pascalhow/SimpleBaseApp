@@ -4,16 +4,16 @@ Base app is a template for a basic Android project. It has been set up with the 
   
 Some of the set up include:
 
-1) Java 8  
+#1) Java 8  
   
-2) Add library dependencies:  
+#2) Add library dependencies:  
 a) ButterKnife  
 b) RecyclerView  
 c) RXJava  
 d) Timber  
 e) Retro lambda to support lambdas  
   
-3) Basic layout setup including fragments with:  
+#3) Basic layout setup including fragments with:  
 a) Simple screen navigation  
 b) Screen title handler  
 c) Toolbar handling  
