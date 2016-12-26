@@ -37,6 +37,7 @@ dependencies {
 
     compile "com.android.support:appcompat-v7:$appCompatVersion"
     compile "com.jakewharton:butterknife:$butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     compile "com.android.support:recyclerview-v7:$appCompatVersion"
     compile "com.jakewharton.timber:timber:$timberVersion"
     compile "com.afollestad.material-dialogs:core:$materialDesignDialogVersion"

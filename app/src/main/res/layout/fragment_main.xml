@@ -6,11 +6,18 @@
     android:orientation="vertical"
     tools:context="com.pascalhow.baseapp.MainFragment.MainFragment">
 
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_screen_button_text" />
+
     <TextView
+        android:id="@+id/main_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:text="@string/main_screen_hello_text"
         android:textAppearance="?android:textAppearanceLarge"
-        android:textSize="@dimen/main_screen_title_text_size"
-        android:text="@string/hello_blank_fragment" />
+        android:textSize="@dimen/main_screen_title_text_size" />
 
 </LinearLayout>
