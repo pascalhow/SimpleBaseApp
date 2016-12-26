@@ -43,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
         String fragClassName = fragment.getClass().getName();
 
         if (fragClassName.equals(MainFragment.class.getName())) {
-            setTitle(getResources().getString(R.string.main_fragment_title));
+            setTitle(getResources().getString(R.string.main_screen_fragment_title));
             showFloatingActionButton();
         } else if (fragClassName.equals(NewFragment.class.getName())) {
-            setTitle(getResources().getString(R.string.new_fragment_title));
+            setTitle(getResources().getString(R.string.new_screen_fragment_title));
         }
     }
 

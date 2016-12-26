@@ -9,16 +9,23 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.pascalhow.baseapp.MainActivity;
 import com.pascalhow.baseapp.R;
+import com.pascalhow.baseapp.R2;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by pascal on 25/12/2016.
  */
 public class MainFragment extends Fragment {
+
+    @BindView(R2.id.main_text)
+    TextView mainText;
 
     private MainActivity mainActivity;
 
@@ -30,12 +37,17 @@ public class MainFragment extends Fragment {
         ButterKnife.bind(this, rootView);
 
         mainActivity = (MainActivity) getActivity();
-        mainActivity.setTitle(R.string.main_fragment_title);
+        mainActivity.setTitle(R.string.main_screen_fragment_title);
         mainActivity.showFloatingActionButton();
 
         setHasOptionsMenu(true);
 
         return rootView;
+    }
+
+    @OnClick(R2.id.main_button)
+    public void onMainButtonClick() {
+        mainText.setText(getString(R.string.main_screen_content_text));
     }
 
     @Override
